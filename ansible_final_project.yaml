@@ -14,9 +14,11 @@
 
   - name: create tag to image
     command: docker tag myproject:CICD edu123/myproject:CICD
-
-  - name: loginto docker
-    command: docker login --username edu123 --password Edureka@123
+    
+  - name: Log into DockerHub
+    docker_login:
+    username: edu123
+    password: Edureka@123 
 
   - name: push image on to dockerhub
     command: docker push edu123/myproject:CICD
