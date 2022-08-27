@@ -25,7 +25,7 @@ pipeline{
               steps{
 		    
 		  echo 'codeReview'
-                  sh 'mvn pmd:pmd'
+                 // sh 'mvn pmd:pmd'
               }
           }
            stage('UnitTest'){
